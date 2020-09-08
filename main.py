@@ -1,42 +1,26 @@
 #@author: github.com/guidoenr4
 #@date: 07-09-2020
 
+import bcolors
 from random import randrange
 
 def test_cases(cases):
-    changin = 0
+    changing = 0
     staying = 0
-    i = 0
-    while i < cases:
-        doors = new_case()
-        correct = get_correct(doors)
-        choice = randrange(3)
-        if switch(doors, correct, choice):
-            changin+=1
-        else:
-            staying+=1
-        i+=1
-    print("Changin: " + str(changin) + " cases" )
-    print("Staying: " + str(staying) + " cases" )
+    for i in range(0, cases):
+        correct, choice = new_case()
+        if not choice == correct : changing+=1
+        else : staying+=1
+    bcolors.print_green("changing the door: " + str(changing) + " cases" )
+    bcolors.print_blue("staying with your decision: " + str(staying) + " cases" )
 
-def switch(doors, correct, choice):
-    return not choice == correct
-
-def get_correct(doors):
-    i = 0
-    for x in doors:
-        if x == True:
-            return i
-        else:
-            i+=1
 
 def new_case():
-    random = randrange(3)
-    doors_array = [False, False, False]
-    doors_array[random] = True
-    return doors_array
+    return randrange(3), randrange(3)
 
 if __name__ == '__main__':
-    print("monty hall paradox por guidoti")
-    cases = int(input("cases: "))
+    bcolors.print_best("MONTY-HALL PARADOX, @author> guidoenr4")
+    cases = int(input("insert the cases to test (with 3 doors): "))
     test_cases(cases)
+
+
