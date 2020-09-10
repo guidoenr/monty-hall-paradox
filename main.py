@@ -24,6 +24,6 @@ if __name__ == '__main__':
     cases = int(input("insert the cases to test (with 3 doors): "))
     start_time = time.time()
     test_cases(cases)
-    bcolors.print_curl('seconds: ' + str(time.time() - start_time))
+    bcolors.print_curl('time elapsed: ' + str(time.time() - start_time))
 
 
