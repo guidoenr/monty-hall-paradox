@@ -33,3 +33,9 @@ def print_blue(text):
 
 def print_best(text):
     print(bcolors.CGREEN + text + bcolors.ENDC)
+
+def print_curl(text):
+    print(bcolors.CURL + text + bcolors.ENDC)    
+
+def print_warning(text):
+    print(bcolors.WARNING + text + bcolors.ENDC)
