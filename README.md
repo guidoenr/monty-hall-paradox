@@ -36,8 +36,7 @@ import bcolors
 from random import randrange
 
 def test_cases(cases):
-    changing = 0
-    staying = 0
+    changing, staying = 0, 0
     for i in range(0, cases):
         correct, choice = new_case()
         if not choice == correct : changing+=1
