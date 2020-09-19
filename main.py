@@ -19,10 +19,10 @@ def new_case():
     return randrange(3), randrange(3)
 
 if __name__ == '__main__':
-    bcolors.print_best("MONTY-HALL PARADOX, @author> guidoenr4")
+    bcolors.print_red("MONTY-HALL PARADOX, @author> guidoenr4")
     cases = int(input("insert the cases to test (with 3 doors): "))
     start_time = time.time()
     test_cases(cases)
-    bcolors.print_curl('time elapsed: ' + str(time.time() - start_time))
+    bcolors.print_cviolet('time elapsed: ' + str(time.time() - start_time))
 
 

@@ -39,3 +39,9 @@ def print_curl(text):
 
 def print_warning(text):
     print(bcolors.WARNING + text + bcolors.ENDC)
+
+def print_red(text):
+    print(bcolors.FAIL + text + bcolors.ENDC)
+
+def print_cviolet(text):
+    print(bcolors.CVIOLET + text + bcolors.ENDC)
