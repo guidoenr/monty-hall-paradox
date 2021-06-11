@@ -14,8 +14,9 @@ Tal vez genera confusion pensarlo con 3 puertas, por un tema de sentido comun y 
 Podes leer mas sobre la [Paradoja de Monty Hall](https://es.wikipedia.org/wiki/Problema_de_Monty_Hall) en cualquier sitio.
 
 Desarrolle un simple algoritmo en **Python**, que simula la situacion con los casos que quieras (obviamente con 3 puertas, puesto que a medida que se incrementen las puertas, menos chances vas a tener de ganar quedandote con tu decision).
+Es un simple algoritmo de complejidad algoritmica **o(N)** (para REALMENTE simular casos, podria mejorarse simplemente haciendo una cuenta, pero no es la idea)
 
-Esto surge despues de una discusion un sabado a las *4:05 AM* , al no tener forma de explicar y/o hacer entender a mis amigos.
+Esto surge despues de una discusion un sabado a las *4:05 AM* , al no tener forma de explicar y/o hacer entender a los burros de mis amigos.
 
 
 # Instalacion
